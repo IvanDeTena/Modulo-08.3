@@ -1,0 +1,30 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cce7ff;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background-color: transparent;
+  width: 90%;
+  max-width: 600px;
+}
+
+
+.carta {
+  background-color: #80c7ff;
+  border-radius: 4px;
+  aspect-ratio: 1;
+  height: 100px;
+  width: 100px;
+}

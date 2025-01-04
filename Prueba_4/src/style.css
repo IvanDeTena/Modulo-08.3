@@ -1,0 +1,70 @@
+.cartas-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.carta {
+  width: 100px;
+  height: 150px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+
+.carta div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fefefe;
+}
+
+
+.frente {
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* La cara trasera (reverso) */
+.reverso {
+  background-color: #007bff;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.carta.flipped {
+  transform: rotateY(180deg);
+}
+
+
+.carta.flipped .frente {
+  background-image: url('src/1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.carta.flipped:nth-child(2) .frente {
+  background-image: url('src/2.png');
+  background-size: cover;
+  background-position: center;
+}

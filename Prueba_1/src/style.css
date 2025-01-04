@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#puntuacionDiv, #cartaDiv {
+    font-size: 24px;
+    margin: 20px;
+}
+
+#cartaImg {
+    width: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+}
